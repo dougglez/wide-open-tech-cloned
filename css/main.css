@@ -1,0 +1,52 @@
+.background-image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/African_Union_(orthographic_projection).svg/541px-African_Union_(orthographic_projection).svg.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-header-container {
+  height:85px;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.7);
+  align-items: center;
+  padding: 0 20px;  /* 0 20px 0 20px */
+  z-index: 2;
+}
+.logo {
+  display: none;
+}
+
+.main-nav{
+  display: none;
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.login-button{}
+.signup-button {}
+.ham{
+  width: 40px;
+  height: 25px;
+}
+
+@media(min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
+  .ham {
+    display: none;
+  }
+  .logo {
+    display: flex;
+  }
+}
